@@ -1,0 +1,82 @@
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) { 
+ .absolate-img img {
+	width: 725px;
+	height: 772px;
+}  
+    
+}
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+.absolate-img-2, .ab-5, .absolate-img-2 {
+	display: none;
+}
+.hero-content {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.mean-container a.meanmenu-reveal {
+	border: 1px solid #0096FF;
+	color: #0096FF;
+	margin-top: 5px;
+}
+.mean-container a.meanmenu-reveal span {
+  background: #0096FF;
+}
+.mean-container .mean-nav {
+	margin-top: 44px;
+}
+.mean-nav li {
+  background: #0074E8;
+}    
+}
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) { 
+.absolate-footer-bg {
+	display: none;
+}
+.footer-area h5,  li {
+ color: #2d2058;
+}
+.footer-area p{
+	color: #2d2058;
+}
+.single-footer {
+	margin-top: 30px;
+}
+.absolate-img-2, .ab-5, .absolate-img-2 {
+	display: none;
+}
+.absolate-img {
+	display: none;
+}
+.hero-content {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.mean-container a.meanmenu-reveal {
+	border: 1px solid #0096FF;
+	color: #0096FF;
+	margin-top: 5px;
+}
+.mean-container a.meanmenu-reveal span {
+  background: #0096FF;
+}
+.mean-container .mean-nav {
+	margin-top: 44px;
+}
+.mean-nav li {
+  background: #0074E8;
+}
+.Form-area {
+	width: 250px;
+}
+.mean-container a.meanmenu-reveal {
+	margin-top: -37px;
+}
+    
+}
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) { 
+
+}

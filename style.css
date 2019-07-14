@@ -1,0 +1,471 @@
+/*
+  Theme Name: Construction - Clean Construction HTML5 Template
+  Author: nilartstudio
+  Description: Construction  HTML5 Bootstrap 4 template.
+  Version: 1.0
+*/
+
+/* CSS Index
+-----------------------------------
+1. Theme default css
+2. header
+3. slider-area
+4. features area
+5. promotion area
+6. portfolio area
+7. counter area
+8. latest blog
+9. blog style
+10. blog sidebar
+11. testimonial-wrapper
+12. footer
+13. team area
+14 our-mission
+15. service area
+16. contact area
+17. Careers
+18. shop
+19. product-details
+20. cart
+*/
+
+
+
+/* 1. Theme default css */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700&display=swap');
+body {
+	font-family: 'Open Sans', sans-serif;;
+	font-weight: normal;
+	font-style: normal;
+	color:#2d2058;
+}
+.img {
+	max-width: 100%;
+	transition: all 0.3s ease-out 0s;
+}
+.f-left {
+	float: left
+}
+.f-right {
+	float: right
+}
+.fix {
+	overflow: hidden
+}
+a,
+.button,button {
+	-webkit-transition: all 0.3s ease-out 0s;
+	-moz-transition: all 0.3s ease-out 0s;
+	-ms-transition: all 0.3s ease-out 0s;
+	-o-transition: all 0.3s ease-out 0s;
+	transition: all 0.3s ease-out 0s;
+}
+a:focus,
+.button:focus {
+	text-decoration: none;
+	outline: none;
+}
+button{cursor: pointer}
+a:focus,
+a:hover,
+.portfolio-cat a:hover,
+.footer -menu li a:hover {
+	color:  #00A5E8;
+	text-decoration: none;
+}
+a,
+button {
+	color: #222;
+	outline: medium none;
+}
+input:focus,textarea:focus,:focus{outline: 0}
+button:focus {
+  outline: 0 none;
+}
+.uppercase {
+	text-transform: uppercase;
+}
+.capitalize {
+	text-transform: capitalize;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: normal;
+	color: #1c2056;
+	margin-top: 0px;
+	font-style: normal;
+	font-weight: 600;
+	text-transform: normal;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+	color: inherit;
+}
+h1 {
+	font-size: 40px;
+	font-weight: 500;
+}
+h2 {
+	font-size: 35px;
+}
+h3 {
+	font-size: 28px;
+}
+h4 {
+	font-size: 22px;
+}
+h5 {
+	font-size: 18px;
+}
+h6 {
+	font-size: 16px;
+}
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+li {
+	list-style: none
+}
+p {
+	font-size: 17px;
+	font-weight: normal;
+	line-height: 30px;
+	color: #2d2058;
+	margin-bottom: 15px;
+}
+hr {
+	border-bottom: 1px solid #eceff8;
+	border-top: 0 none;
+	margin: 30px 0;
+	padding: 0;
+}
+label {
+	color: #7e7e7e;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 400;
+}
+*::-moz-selection {
+	background: #d6b161;
+	color: #fff;
+	text-shadow: none;
+}
+::-moz-selection {
+	background: #444;
+	color: #fff;
+	text-shadow: none;
+}
+::selection {
+	background: #444;
+	color: #fff;
+	text-shadow: none;
+}
+*::-moz-placeholder {
+	color: #555555;
+	font-size: 14px;
+	opacity: 1;
+}
+*::placeholder {
+	color: #555555;
+	font-size: 14px;
+	opacity: 1;
+}
+.btn {
+  -moz-user-select: none;
+  background: #2f3440 none repeat scroll 0 0;
+  border: 1px solid transparent;
+  border-radius: 0;
+  color: #fff;
+  display: inline-block;
+  font-family: poppins;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.1;
+  padding: 20px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.3s ease 0s;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+  border: 0;
+}
+.btn:hover{color: #fbba42}
+.btn:hover:before{width:100%;color: #444}
+.btn.brand-btn{background: #fbba42;color: #222}
+.btn.brand-btn:hover{background: #2f3440;color: #fbba42}
+.btn.btn-2 {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: 1px solid #fbba42;
+  line-height: 1;
+  padding: 17px 35px;
+}
+.btn.btn-2:hover{border-color: #2f3440}
+.btn i {
+  margin-right: 10px;
+}
+/*Header css*/
+
+.logo a {
+  font-size: 30px;
+}
+.logo a span {
+  color: #1955A3;
+}
+.main-menu li {
+  display: inline-block;
+}
+.main-menu li a {
+  display: block;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.header-area {
+  padding: 25px 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.hero-content {
+  padding-left: 127px;
+  padding-right: 100px;
+}
+.hero-content h2 {
+  line-height: 55px;
+}
+.hero-content p {
+  line-height: 40px;
+}
+.hero-content a {
+  display: inline-block;
+  background: #2870DB;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 30px;
+  box-shadow: 0 28px 52px #CDDBEB;
+}
+.hero-area {
+  position: relative;
+  padding: 200px 0;
+}
+.absolate-img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+.absolate-img img {
+  width: 800px;
+  height: 850px;
+}
+
+.absolate-img-2 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.ab-3 {
+  position: absolute;
+  right: 48%;
+  bottom: 0;
+}
+.ab-2 {
+  position: absolute;
+  top: 20%;
+  right: 50%;
+}
+
+.ab-1 {
+  position: absolute;
+  top: 20%;
+  left: 4%;
+}
+.hiking-area {
+  padding: 135px 0;
+}
+
+.hiking-area {
+  position: relative;
+}
+.absolate-img-3 {
+  position: absolute;
+  top: 109px;
+  left: 0;
+}
+.single-hiking {
+  background: #fff;
+  padding: 35px;
+}
+.single-hiking h3 {
+  font-size: 18px;
+}
+.single-hiking p {
+  font-size: 14px;
+}
+.single-hiking {
+}
+.single-hiking {
+  box-shadow: 6px 10px 10px #ddd;
+  margin-top: 84px;
+}
+.absolate-img-3 img {
+  width: 80%;
+}
+
+.ab-5 {
+  position: absolute;
+  right: 0;
+  top: 20%;
+  z-index: -1;
+}
+
+.ab-4 {
+  position: absolute;
+  right: 45px;
+  top: 22%;
+}
+.ab-6 {
+  position: absolute;
+  bottom: -265px;
+  left: 40px;
+}
+.ab-7 {
+  position: absolute;
+  left: 32%;
+  top: 19%;
+}
+.ab-7 img {
+  width: 50px;
+}
+.ab-8 img {
+  width: 40px;
+}
+.ab-8 {
+  position: absolute;
+  right: 42%;
+  top: 47%;
+}
+.ab-9 img {
+  width: 40px;
+}
+.ab-9 {
+  position: absolute;
+  left: 43%;
+  bottom: 79px;
+}
+
+.single-coundown {
+  margin-top: 85px;
+  text-align: center;
+}
+.single-coundown span {
+  font-size: 40px;
+  color: #1a56a3;
+}
+.single-coundown h4 {
+  font-size: 18px;
+  font-weight: 300;
+}
+.coundown-area {
+  padding: 50px 0;
+}
+.bg-1{background-image: url(assets/img/b-1.jpg);}
+.bg-2{background-image: url(assets/img/b-2.jpg);}
+.bg-3{background-image: url(assets/img/b-3.jpg);}
+.single-blog {
+  box-shadow: 0px 4px 14px #ddd;
+}
+.blog-bg {
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+}
+.contact-area {
+  padding: 85px 0;
+}
+.single-blog {
+  border-radius: 5px;
+}
+.blog-content {
+  padding: 20px;
+}
+.blog-content h4 {
+  font-size: 24px;
+}
+.blog-content a {
+  color: #357ACB;
+}
+.blog-area h2 {
+  margin-bottom: 50px;
+}
+.form-conent {
+  background: #3072C0;
+  padding: 50px;
+  border-radius: 5px;
+}
+.form-conent h2 {
+  font-size: 27px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.Form-area input {
+  width: 100%;
+  border: none;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  border-radius: ;
+  border-radius: 5px;
+}
+.Form-area {
+  width: 350px;
+  margin: 0 auto;
+}
+.Form-area button {
+  background: #00AEFF;
+  border: none;
+  display: inline-block;
+  padding: 10px 45px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.social-btn a {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  display: inline-block;
+  background: #fff;
+  color: #1955A3;
+  line-height: 40px;
+  border-radius: 50%;
+}
+
+.footer-area {
+  position: relative;
+}
+.absolate-footer-bg {
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+  left: 0;
+  height: 600px;
+}
+.absolate-footer-bg img {
+  width: 100%;
+}
+.footer-area h5, .footer-area p, li {
+  color: #fff;
+}
